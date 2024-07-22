@@ -70,7 +70,7 @@ const Form = () => {
             <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
 
             <label htmlFor="phone">Telefon raqami:</label>
-            <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} required />
+            <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} required placeholder='+998' />
 
             <div className="links">
                 <button type="button" onClick={handleLinkClick}>Add Links</button>
@@ -83,8 +83,10 @@ const Form = () => {
 
             <label htmlFor="country">Davlat:</label>
             <select id="country" name="country" value={formData.country} onChange={handleChange} required>
-                <option value="">Select</option>
                 <option value="uz">Uzbekistan</option>
+                <option value="uz">Rassia</option>
+                <option value="uz">England</option>
+
                 {/* Add more options as needed */}
             </select>
 
